@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Dewali</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: #000934;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: radial-gradient(circle, transparent 50%, black 150%), #110e0c;
+        }
+        @keyframes batiMove {    
+    0%   {border-radius: 40% 81% 45% 35% / 90% 77% 45% 26%;}
+  25%  {border-radius: 70% 81% 45% 35% / 90% 77% 45% 26%;}
+  50%  {border-radius: 90% 81% 45% 35% / 90% 77% 45% 26%;}
+  75%  {border-radius: 70% 81% 45% 35% / 90% 77% 45% 26%;}
+  100% {border-radius: 40% 81% 45% 35% / 90% 77% 45% 26%;}
+}
+@keyframes batiRaysMove {    
+    0%   {box-shadow: 2px -2px 305px 210px #472305;}
+  25%  {box-shadow: 2px -2px 255px 200px #472305;}
+  50%  {box-shadow: 2px -2px 205px 190px #472305;}
+  75%  {box-shadow: 2px -2px 255px 200px #472305;}
+  100% {box-shadow: 2px -2px 305px 210px #472305;}
+}
+@keyframes mainHoleMove {    
+    0%   {width: 20%;}
+  25%  {width: 20.2%;}
+  50%  {width: 20.5%;}
+  75%  {width: 20.2%;}
+  100% {width: 20%;}
+}
+      main {
+            width: 20%;
+            height: 80vh;
+            border-radius: 50%;
+            background: #1a140e;
+            box-shadow: 2px -2px 255px 108px #472305;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            transform: rotateX(85deg);
+            margin-top: 27rem;
+            animation-name: mainHoleMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+        }
+
+        #diya {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 0 0 300px 300px;
+            background: radial-gradient(circle, #4b280c, #381c03, #110a05);
+            width: 28%;
+            height: 32vh;
+            z-index: 1;
+        }
+
+        #bati {
+            display: block;
+      width: 70px;
+      height: 180px;
+      background-color: #e5a400;
+      background: radial-gradient(circle, transparent 0%, #fbe7b5 150%), #ffd466;
+      animation-name: batiMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+      border-radius: 40% 81% 45% 47% / 93% 77% 45% 26%;
+      position: absolute;
+      top: 36%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+      box-shadow: 2px -2px 46px 5px #654a08;
+
+
+        }
+
+        #batiRays
+        {
+            display: block;
+      width: 60px;
+      height: 170px;
+      border-radius: 40% 81% 45% 47% / 93% 77% 45% 26%;
+      position: absolute;
+      top: 36%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 2px -2px 305px 210px #472305;
+            animation-name: batiRaysMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+        }
+
+        #upperLayer1 {
+            width: 99%;
+            height: 2PX;
+            margin: 8px 0 8px 2px;
+            background-color: #fff;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #upperLayer2 {
+            width: 97.5%;
+            height: 2PX;
+            margin: 8px 0 8px 5px;
+            background-color: #fff;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #center {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: -1;
+            background: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bati">
+
+    </div>
+    <div id="batiRays">
+
+    </div>
+    <div id="diya">
+        <div id="upperLayer1"></div>
+        <div id="center">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div id="upperLayer2"></div>
+
+    </div>
+    <main>
+
+    </main>
+</body>
+
+</html>
